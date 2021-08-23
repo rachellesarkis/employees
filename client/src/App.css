@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+}
+
+.MuiLink-root:hover {
+  text-decoration: none;
+}
+
+a,
+a:hover {
+  color: inherit;
+}
