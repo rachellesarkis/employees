@@ -31,7 +31,7 @@ function Employees() {
   };
 
   useEffect(() => {
-    Axios.get("http://localhost:3001/employees").then((response) => {
+    Axios.get("http://localhost:8000/employees").then((response) => {
       console.log(response);
       setEmployeesList(response.data);
       setClone(response.data);

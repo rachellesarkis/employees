@@ -33,7 +33,7 @@ export default function AddEmployee({
       job_title: jobTitle,
       location: location,
     };
-    Axios.post("http://localhost:3001/employees", array).then((response) => {
+    Axios.post("http://localhost:8000/employees", array).then((response) => {
       console.log(response);
       setEmployeesList([...employeesList, response.data.employee]);
       setOpenAddEmployee(false);

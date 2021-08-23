@@ -13,7 +13,7 @@ export default function AddEmployee({
   id,
 }) {
   const deleteEmployee = () => {
-    Axios.delete(`http://localhost:3001/employees/${id}`).then((response) => {
+    Axios.delete(`http://localhost:8000/employees/${id}`).then((response) => {
       console.log(response);
       const filteredArray = employeesList.filter((el) => el._id !== id);
       setEmployeesList(filteredArray);

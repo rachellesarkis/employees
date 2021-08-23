@@ -20,7 +20,7 @@ const EmployeePage = () => {
   });
 
   const updateEmployee = () => {
-    Axios.put(`http://localhost:3001/employees/${id}`, employee).then(
+    Axios.put(`http://localhost:8000/employees/${id}`, employee).then(
       (response) => {
         console.log(response);
         setOpenBar(true);
@@ -29,7 +29,7 @@ const EmployeePage = () => {
   };
 
   useEffect(() => {
-    Axios.get(`http://localhost:3001/employees/${id}`).then((response) => {
+    Axios.get(`http://localhost:8000/employees/${id}`).then((response) => {
       setEmployee(response.data);
       console.log(response.data);
     });
